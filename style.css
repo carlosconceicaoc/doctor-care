@@ -1,3 +1,5 @@
+/* GERAL */
+
 * {
     margin: 0;
     box-sizing: border-box;
@@ -19,10 +21,13 @@ body {
     text-align: center;
 }
 
-header {
+.wrapper {
     width: 37.5rem;
-    margin-right: auto;
-    margin-left: auto;
+    margin: 0 auto;
+}
+
+/* HEADER */
+header {
     margin-top: 4.1rem;
 }
 
@@ -42,13 +47,13 @@ header::before {
     z-index: -1;
 }
 
-h4 {
+header h4 {
     font-size: 1.4rem;
     color: var(--primary-color);
     margin-bottom: 1.6rem;
 }
 
-h1 {
+header h1 {
     font-size: 3.4rem;
     color: var(--headline);
     line-height: 130%;
@@ -56,7 +61,7 @@ h1 {
     margin-bottom: 2.4rem;
 }
 
-p {
+header p {
     font-size: 1.8rem;
     line-height: 150%;
     font-weight: 400;
@@ -65,7 +70,7 @@ p {
     margin-bottom: 3.2rem;
 }
 
-button {
+header button {
     background: var(--primary-color);
 
     border: none;
@@ -88,6 +93,13 @@ button {
 
     margin-right: auto;
     margin-left: auto;
+}
+
+header img {
+    display: block;
+    margin: 0 auto;
+    object-position: 0 2rem;
+    width: 26.4rem;
 }
 
 .stats {
@@ -120,9 +132,11 @@ button {
     line-height: 150%;
 }
 
-header img {
-    display: block;
-    margin: 0 auto;
-    object-position: 0 2rem;
-    width: 26.4rem;
+/* NAVIGATION */
+nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 1.6rem 2.4rem;
 }
